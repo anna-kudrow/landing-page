@@ -1,6 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
 
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,100&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
 
 body {
   font-family: "Open Sans", sans-serif;
@@ -8,11 +12,9 @@ body {
   color: #fff;
 }
 
-* {
-  margin: 0;
-  padding: 0;
+.content {
+  padding: 0 3%;
 }
-
 .center {
   max-width: 1147px;
   margin: 0 auto;
@@ -303,7 +305,7 @@ body {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-style: normal;
-  padding: 48px 0 51px;
+  padding: 48px 3% 51px;
 }
 
 .footer__inner {
