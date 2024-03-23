@@ -83,10 +83,10 @@ body {
 .intro__inner {
   display: flex;
   padding-top: 160px;
-  padding-bottom: 99px;
   flex-wrap: wrap;
   gap: 128px;
   margin-bottom: 197px;
+  justify-content: center;
 }
 
 .intro__title-small {
@@ -133,13 +133,24 @@ body {
 
 .intro__logos {
   display: flex;
-  justify-content: space-between;
+  gap: 70px;
   flex-wrap: wrap;
+  justify-content: center;
+  padding-bottom: 99px;
 }
 
 .about {
   background-color: #020a18;
-  padding: 167px 0 264px;
+  padding: 157px 0 264px;
+}
+
+.about__pic {
+  max-width: 594px;
+  max-height: 548px;
+}
+
+.about__pic img {
+  width: 100%;
 }
 
 .about__info {
@@ -148,9 +159,10 @@ body {
 
 .about__inner {
   display: flex;
-  gap: 6%;
+  gap: 68px;
   align-items: center;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .about__title {
@@ -176,6 +188,7 @@ body {
   display: flex;
   gap: 30px;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .features__item {
@@ -209,11 +222,9 @@ body {
 .features__down-block {
   display: flex;
   gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
 }
-/* 
-.down-block__big-block {
-  max-width: 754px;
-} */
 
 .features__item-big {
   width: 754px;
@@ -259,6 +270,9 @@ body {
 
 .reviews__inner {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
 }
 
 .reviews__info {
@@ -267,6 +281,7 @@ body {
 
 .reviews__title {
   margin-bottom: 40px;
+  max-width: 567px;
 }
 .reviews__text {
   text-align: left;
@@ -353,4 +368,46 @@ body {
 
 .footer__social-links img {
   opacity: 0.6;
+}
+
+@media (max-width: 850px) {
+  .intro__title {
+    font-size: 48px;
+  }
+
+  .intro__title-small {
+    font-size: 16px;
+  }
+
+  .intro__logos {
+    max-width: 575px;
+    padding-bottom: 120px;
+  }
+
+  .features__upper-block {
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+  }
+
+  .features__down-block {
+    display: none;
+  }
+
+  .reviews__inner {
+    gap: 64px;
+  }
+
+  .footer__inner {
+    flex-wrap: wrap;
+    gap: 35px;
+  }
+
+  .footer__about-links {
+    order: 1;
+  }
+
+  .footer__about {
+    margin-left: 100px;
+  }
 }
