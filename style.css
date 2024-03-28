@@ -302,6 +302,10 @@ body {
   max-width: 503px;
 }
 
+.reviews__picture img {
+  width: 100%;
+}
+
 .footer {
   background-color: rgb(9, 14, 23);
   font-family: "Roboto", sans-serif;
@@ -461,6 +465,12 @@ body {
   .about {
     padding-top: 96px;
     padding-bottom: 96px;
+  }
+
+  .about__info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .about__title {
