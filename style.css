@@ -420,9 +420,17 @@ body {
   }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 431px) {
+  .content {
+    padding: 0 1%;
+  }
+
+  .header__menu {
+    max-width: 300px;
+  }
+
   .menu__list {
-    gap: 4%;
+    gap: 16px;
   }
 
   .menu__link {
