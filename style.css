@@ -33,6 +33,11 @@ body {
   border: transparent;
 }
 
+.button:hover {
+  transition: transform 0.3s;
+  transform: scale(1.2);
+}
+
 .title__medium {
   font-size: 40px;
   font-weight: 700;
@@ -67,6 +72,11 @@ body {
 .menu__item {
   padding-top: 39px;
   padding-bottom: 39px;
+}
+
+.menu__item:hover {
+  text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 42px rgb(81, 208, 210),
+    0 0 82px rgb(69, 135, 228), 0 0 92px rgb(71, 192, 203);
 }
 
 .menu__link {
